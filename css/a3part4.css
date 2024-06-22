@@ -67,3 +67,7 @@ article>img {
     float: left;
     margin-right: 1.8rem;
 }
+
+article {
+    padding-right: 3rem;
+}
