@@ -137,3 +137,38 @@ aside>ul>li {
 section ol li {
     list-style-type: lower-alpha;
 }
+
+nav ul li {
+    list-style-type: none;
+    border: 1px solid #a66;
+    text-align: center;
+    padding: 1.8rem 0rem 1.8rem 0rem;
+    margin: 1rem auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+nav ul li a:link {
+    color: #a66;
+
+}
+
+nav ul li a:visited {
+    color: #a66;
+}
+
+nav ul li a:focus {
+    color: rgb(213, 106, 67);
+}
+
+nav ul li a:hover {
+    color: rgb(246, 9, 9);
+}
+
+nav ul li a:active {
+    color: rgb(70, 226, 146);
+}
