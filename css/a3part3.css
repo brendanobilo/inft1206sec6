@@ -1,45 +1,71 @@
 /* General setup */
+@font-face {
+    font-family: "myFont";
+    src: url("../fonts/andada/Andada-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "kameron";
+    src: url("../fonts/kameron/Kameron-Regular.woff2") format("woff2");
+}
 
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
-  }
-  
-  /* Layout */
-  
-  section {
+}
+
+/* Layout */
+
+section {
     float: left;
     width: 50%;
-  }
-  
-  aside {
+}
+
+aside {
     float: left;
     width: 30%;
-  }
-  
-  nav {
+}
+
+nav {
     float: left;
     width: 20%;
-  }
-  
-  footer {
+}
+
+footer {
     clear: both;
-  }
-  
-  header, section, aside, nav, footer {
+}
+
+header,
+section,
+aside,
+nav,
+footer {
     padding: 20px;
-  }
-  
-  /* header and footer */
-  
-  header, footer {
+}
+
+/* header and footer */
+
+header,
+footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
-  }
-  
-  /* WRITE YOUR CODE BELOW HERE */
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+h1,
+h2 {
+    font-family: "myFont", serif, sans-serif;
+    letter-spacing: 3px;
+}
+
+p,
+a,
+li {
+    font-size: 1.45rem;
+    font-family: "kameron", serif;
+}
