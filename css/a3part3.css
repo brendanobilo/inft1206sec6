@@ -76,7 +76,8 @@ li {
 }
 
 h1 {
-    font-size: 4rem;
+    text-align: center;
+    font-size: 5rem;
 }
 
 h2 {
@@ -89,4 +90,8 @@ p {
     letter-spacing: 1px;
     word-spacing: 0.1rem;
     width: 96%;
+}
+
+section h2+p {
+    text-indent: 20px;
 }
