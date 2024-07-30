@@ -32,7 +32,7 @@ function result() {
 
   if(customName.value.trim() !== '') {
     const name = customName.value;
-    newStory = newStory.replaceAll("Bob", name)
+    newStory = newStory.replaceAll("Bob", name);
   }
 
   if(document.getElementById("uk").checked) {
@@ -40,7 +40,7 @@ function result() {
     let stones = 300 / 14;
     const weight = Math.round(stones);
     const temperature =  Math.round(celsius);
-    newStory = newStory.replaceAll("94 fahrenheit", temperature + " centigrade").replaceAll("300 pounds", weight + " stones")
+    newStory = newStory.replaceAll("94 fahrenheit", temperature + " centigrade").replaceAll("300 pounds", weight + " stones");
 
   }
 

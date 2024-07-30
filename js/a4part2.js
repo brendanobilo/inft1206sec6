@@ -21,6 +21,7 @@ function updateImage(e) {
     displayedImage.src = e.target.src;
     displayedImage.alt = e.target.alt;
 }
+
 for (const image of images) {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', `../images/${image}`);
