@@ -14,13 +14,20 @@ const alts = {
     'pic3.jpg' : 'Purple and white pansies',
     'pic4.jpg' : 'Section of wall from a pharoah\'s tomb',
     'pic5.jpg' : 'Large moth on a leaf'
-  }
+  };
 
 /* Looping through images */
+function updateImage(e){
+    displayedImage.src = e.target.src;
+    displayedImage.alt = e.target.alt;
+}
+for(const image of images){
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', `../images/${image}`);
+    newImage.setAttribute('alt', alts[image]);
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener('click', updateImage);
+}
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
