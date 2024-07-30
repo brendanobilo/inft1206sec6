@@ -36,11 +36,14 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+    let celsius = (94-32) * 5 / 9;
+    let stones = 300 / 14;
+    const weight = Math.round(stones);
+    const temperature =  Math.round(celsius);
+    newStory = newStory.replaceAll("94 fahrenheit", temperature + " centigrade").replaceAll("300 pounds", weight + " stones")
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
