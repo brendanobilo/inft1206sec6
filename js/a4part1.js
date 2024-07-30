@@ -30,9 +30,9 @@ function result() {
     let zItem = randomValueFromArray(insertz);
     newStory = newStory.replaceAll(":insertx:", xItem).replaceAll(":inserty:", yItem).replaceAll(":insertz:", zItem);
 
-  if(customName.value !== '') {
+  if(customName.value.trim() !== '') {
     const name = customName.value;
-
+    newStory = newStory.replaceAll("Bob", name)
   }
 
   if(document.getElementById("uk").checked) {
